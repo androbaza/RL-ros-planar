@@ -18,3 +18,5 @@ The simulation is run in Gazebo with a cam view from RVIZ.
 The training curve could be seen below:
 ![Alt Text](https://github.com/androbaza/RL-ros-planar/blob/main/2.png)
 
+### Conclusion
+Overall, the learned q-table test did not work as intended - the robot was just going straight to right side after initiation. Probably low number of epochs affected it. However, higher number was not doable due to high CPU usage for a few hours in a row and overheating.
