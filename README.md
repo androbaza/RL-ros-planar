@@ -5,7 +5,8 @@ The simulation is run in Gazebo with a cam view from RVIZ.
 ![Alt Text](https://github.com/androbaza/RL-ros-planar/blob/main/1.gif)
 
 ### Parameters modified:
-* # of epochs decreased to 50, so that the process will end in few hours
+
+* number of epochs decreased to 50, so that the process will end in few hours
 * alpha, the learning rate, was decreased to 0.5, no effect was noticed
 * gamma was chosen to be 0.95, so that algorithm prepers higher reward later, than small reward in a short time. Not really applicable to this simulation, as there is only one type of reward.
 * epsilon was chosen to be 0.95 with decay of 0.93 each epoch. So that it is just above 0.02 at 50th epoch. This should have made the algorithm more "random" in the beginning and less random closer to the end. After training, I believe the initial value was too high, as it could be seen from training graph below - there were not much more scores above 0 closer to 50th epoch.
